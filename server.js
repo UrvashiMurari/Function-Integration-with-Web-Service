@@ -99,7 +99,7 @@ app.delete('/student/:id',(req, res)=> {
 });
 
 
-app.get('/assignment9', (req,res) => {
+app.get('/say', (req,res) => {
     axios.get(`https://dkxuuaexya.execute-api.us-east-1.amazonaws.com/test/assignment9?keyword=`+req.query.keyword)
     .then(result => {
         res.status(200)
